@@ -272,4 +272,18 @@ clear.addEventListener("click",()=>{
             firstNum = 0, secondNum = 0;
             document.getElementById('display').innerText = "0";
 
+});
+
+const del=document.querySelector('#delete');
+del.addEventListener("click",()=>{
+    if(state===1){
+        firstNum-=firstNum%10;
+        firstNum/=10;
+        document.getElementById('display').innerText =firstNum;
+    }
+    if(state===3){
+        secondNum-=secondNum%10;
+        secondNum/=10;
+        document.getElementById('display').innerText =secondNum;
+    }
 })
