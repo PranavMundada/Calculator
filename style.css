@@ -8,12 +8,30 @@
     width: 350px;
     margin: 140px;
     border: 3px solid black;
+    background-color: #495057;
+    border-radius: 10px;
 }
 
-#display{
+.displayScreen{
+    display:flex;
+    justify-content: end;
     height: 80px;
     margin: 20px;
     border: 3px solid black;
+    border-radius: 5px;
+    background-color: #ced4da;
+}
+
+.displayScreen div{
+    font-size: 25px;
+    margin-top:45px;
+    height: 30px;
+}
+
+button{
+    border-color: 5px solid black;
+    border-radius: 5px;
+    
 }
 
 .remove{
@@ -25,6 +43,7 @@
 .remove button{
     height: 45px;
     width: 145px;
+    font-size: 20px;
 }
 
 .num_operators{
@@ -36,4 +55,5 @@
 .num_operators button{
     height: 45px;
     width: 65px;
+    font-size: 20px;
 }
